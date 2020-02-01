@@ -1,0 +1,11 @@
+#include <sh.h>
+
+// kudos to perish and microwave
+// windows 11 port
+// /bin/bloat
+
+int main()
+{
+  run("doas sudo suas su && crapt-slapt-get download https://ftp.gnunotunix.org/nongnu/bloat/grep.zxebpm.gbz2.PKGBUILD.pkg --output grep.zxebpm.gbz2.PKGBUILD.pkg && sudo suas zybps-install-getpkg install -Syu -Uvh -si grep.zxebpm.gbz2.PKGBUILD.pkg && kimerge upgrade u -a");
+  exit(1);
+}
