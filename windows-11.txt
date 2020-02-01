@@ -67,7 +67,7 @@ jan 31, 2020
 
 9. HHELPER
 	The first H in HHelper stands for something that will not be discussed in this document.
-	hhelper allows you to encrypt files and entire directories with a custom password and then unencrypt them on the go.
+	hhelper allows you to encrypt files and entire directories with a custom password and then decrypt them on the go.
 	hhelper also hides any files you want to encrypt in /usr/hhelper/.encrypt/[file-name].hhlp
 	All files are encrypted with AES-256 and are unbreakable.
 	hhelper is included in Windows 11 as an essential system utility.
