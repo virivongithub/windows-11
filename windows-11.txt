@@ -1,0 +1,128 @@
+THE WINDOWS 11 SPECIFICATION
+written by bird man
+brief version
+jan 31, 2020
+
+1. ESSENTIALS
+	Windows 11 will come with lolcat as an essential system utility.
+	Windows 11 will use Linux 0.1 as the kernel.
+	runit will be used in place of systemd.
+	Windows 11 will have a C compiler written in PHP, interpreted by an interpreter written in bash.
+	All essential system programs will be written in C99.
+
+2. UTILITIES
+	Windows 11 will come with Netscape Navigator with Emacs bindings.
+	Windows 11 will come with Half Life 3.
+	Windows 11 will have winman as the default package manager (based on pacman).
+	Windows 11 will come with Suicide Linux as an essential system utility.
+	Any attempt to install the package "windows-11" will result in a kernel panic.
+	Windows 11 will come with the Bourne Shell.	
+
+3. MISC
+	Whenever the user attempts to run "sudo rm -rf / --no-preserve-root", "mkdir hentai && cd hentai && wget windows11.io/stash.zip && unzip stash" will run instead.
+	Any attempts to destroy the computer will result in the computer crying.
+	[REDACTED]
+	/usr/bin/tree is a symlink to /usr/bin/cmatrix for that 1337 h4ck3r feel
+	WDE is the default desktop environment
+	GNU is not used; we use real UNIX because we're not idiots
+	
+4. WINDOWS C COMPILER
+	WCC is designed for the compilation of C, CSH++, and WINPHP (standard coming soon).
+	wcc file.c -o file --c
+	Inputs file.c, and outputs file. (C)
+	wcc file.csh -o file --csh
+	Inputs file.csh, and outputs file. (CSH)
+	wcc file.php -o file  --php
+	Inputs file.php, and outputs file. (WINPHP)
+
+5. WINDOWS DESKTOP ENVIRONMENT
+	WDE is totally an independently created Desktop Environment 100% not based on KDE.
+	(Don't tell them, but we actually stole it from KDE.)
+
+6. FILE STRUCTURE
+	/ - root
+	/bin/ - system binaries
+	/sbin/ - user binaries
+	/etc/ - device files
+	/dev/ - configuration files
+	/proc/ - variable files
+	/var/ - process information
+	/tmp/ - user programs
+	/usr/ - temporary files
+	/home/ - bootloader files
+	/boot/ - home directories
+	/lib/ - optional add-on apps
+	/opt/ - system libraries
+	/mnt/ - service data
+	/srv/ - mount directory
+	/hentai/ - removable devices
+	
+7. SPYWARE
+	Windows 11 has a port of Bonzi Buddy package installable with winman -S bonzibuddy.
+	You can get the free NSA spyware package by doing winman -S nsa.
+
+8. WUR
+	The WUR (Windows User Repository) has many interesting packages, like "Totally Not A Virus... Im A Dolphin" (tnaviad [WUR])
+	We recommend using a WUR helper. Our favorite is WWW (Wet Wnother Waourt), which is installable with winman -S www.
+
+9. HHELPER
+	The first H in HHelper stands for something that will not be discussed in this document.
+	hhelper allows you to encrypt files and entire directories with a custom password and then unencrypt them on the go.
+	hhelper also hides any files you want to encrypt in /usr/hhelper/.encrypt/[file-name].hhlp
+	All files are encrypted with AES-256 and are unbreakable.
+	hhelper is included in Windows 11 as an essential system utility.
+
+10. COPYRIGHT
+	Windows 11 is fully open source at windows11.io/w11.git
+	Licensed under GPLv2.
+
+11. CSH++
+	CSH++ (C Shell++) is a programming language that ~~torments~~ educates.
+	Example program:
+	#include <io.h>
+	
+	int main(int argc, string argv[])
+	{
+		echo("hello, world");
+	}
+
+	CSH++ introduces string types and all kinds of exciting features. However, this is a seperate standard we will not delve into.
+	CSH++ programs are normally compiled using WCC. Run wcc file.csh -o file --csh to compile it.
+	Or, you can run it like a normal shell script with csh file.csh
+
+12. WUB
+	WUB (Windows User Bootloader) is the bootloader for Windows 11. WUB does not support dual booting because you won't ever need another OS.
+	WUB is usually located at /home/efi/BOOT/bootx64.efi on UEFI systems.
+
+13. UNLUCKY
+	There is no section 13.
+
+14. WINWM
+	WINWM is a replacement for i3-gaps that can be installed during the installation process of Windows 11.
+	You can choose your rice and use it, and customize it. Comes with WINCOMPTON (tryone compton clone).
+
+15. WINCOMPTON
+	WINCOMPTON is a compositor functioning similarly to tryone compton. The configuration format is the same.
+
+16. WINPHP
+	WINPHP is a compiled language similar to PHP. However, it is meant for Windows usage and can be compiled. WCC is written in WINPHP, as well as WUB and WINWM.
+	Note that WINPHP has some Windows 11 specific features not in PHP.
+
+17. MICROSOFT EDGE 2
+	Microsoft Edge 2 is a rewrite of Netscape Navigator in WINPHP with added Emacs keybindings.
+	Microsoft Edge 2 even has a terminal version written in CSH++.
+	GUI version: edge
+	Terminal version: edge --terminal
+
+18. WINSSH
+	WINSSH allows 2 Windows 11 computers to connect to each other. The standard is similar to SSH, so I won't go into details here.
+
+19. IRCLIKE
+	IRCLIKE is a client for Discord, IRC, Skype, SMS, and more. Just link your accounts to IRCLike to use them! All of your stuff in one centralized place.
+
+20. BLINDS
+	BLINDS will be used as a replacement for GNU after Version 12 due to UNIX being woefully outdated for Windows 11's big brain energy.
+	BLINDS has many functions.
+	del/rm
+	md/mkdir
+	and more!
