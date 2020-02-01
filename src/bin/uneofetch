@@ -1,0 +1,90 @@
+#!/bin/sh
+# uneofetch 0.0.2 redesigned for windows 11
+## INFO
+
+# user is already defined
+host="w11-1903-pc"
+os="Windows 11 Build 1903"
+kernel="Linux 0.1"
+uptime="$(uptime -p | sed 's/up //')"
+packages="a ton (winman)"
+shell="CSH++"
+memory_usage=`free -m | awk 'NR==2{printf "%s/%s MB (%.2f%%)\n", $3,$2,$3*100/$2 }'`
+cpu_usage="yep it's being used rn"
+cpu=`lscpu | sed -nr '/Model name/ s/  / /g; s/.*:\s*(.*) @ .*/\1/p'`
+cpuspeed="thousands of"
+
+## UI DETECTION
+
+if [ -n "${DE}" ]; then
+	ui="WDE"
+	uitype='DE'
+elif [ -n "${WM}" ]; then
+	ui="WinWM"
+	uitype='WM'
+elif [ -n "${XDG_CURRENT_DESKTOP}" ]; then
+	ui="WDE"
+	uitype='DE'
+elif [ -n "${DESKTOP_SESSION}" ]; then
+	ui="WDE"
+	uitype='DE'
+elif [ -f "${HOME}/.xinitrc" ]; then
+	ui="WinWM"
+	uitype='WM'
+elif [ -f "${HOME}/.xsession" ]; then
+	ui="WinWM"
+	uitype='WM'
+else
+	ui='???'
+	uitype='UI'
+fi
+
+
+## DEFINE COLORS
+
+# probably don't change these
+if [ -x "$(command -v tput)" ]; then
+	bold="$(tput bold)"
+	black="$(tput setaf 0)"
+	red="$(tput setaf 1)"
+	green="$(tput setaf 2)"
+	yellow="$(tput setaf 3)"
+	blue="$(tput setaf 4)"
+	magenta="$(tput setaf 5)"
+	cyan="$(tput setaf 6)"
+	white="$(tput setaf 7)"
+	reset="$(tput sgr0)"
+fi
+
+# you can change these
+lc="${reset}${bold}${yellow}"       # labels
+nc="${reset}${bold}${yellow}"       # user and hostname
+ic="${reset}${bold}${white}"        # info
+c0="${reset}${bold}${yellow}"       # first color
+
+
+
+## OUTPUT
+
+cat <<EOF
+
+${white}                          ____     __       __  
+${blue}  __  ______  ___  ____  / __/__  / /______/ /_ 
+${magenta} / / / / __ \/ _ \/ __ \/ /_/ _ \/ __/ ___/ __ \\
+${green}/ /_/ / / / /  __/ /_/ / __/  __/ /_/ /__/ / / /
+${yellow}\__,_/_/ /_/\___/\____/_/  \___/\__/\___/_/ /_/ 
+${white} Windows 11 Redesign, https://github.com/alvinneocom/windows-11/blob/master/src/bin/uneofetch
+
+${lc}${USER}@${host}
+
+${yellow}OS: ${os}
+${green}Kernel: ${kernel}
+${magenta}Uptime: ${uptime}
+${blue}Packages: ${packages}
+${white}Shell: ${shell}
+${blue}UI: ${ui}
+${magenta}CPU: ${cpu} @ ${cpuspeed} MHz
+${green}Memory Usage: ${memory_usage}
+${white}CPU Usage: ${cpu_usage}
+
+EOF
