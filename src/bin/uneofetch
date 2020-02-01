@@ -73,7 +73,7 @@ ${blue}  __  ______  ___  ____  / __/__  / /______/ /_
 ${magenta} / / / / __ \/ _ \/ __ \/ /_/ _ \/ __/ ___/ __ \\
 ${green}/ /_/ / / / /  __/ /_/ / __/  __/ /_/ /__/ / / /
 ${yellow}\__,_/_/ /_/\___/\____/_/  \___/\__/\___/_/ /_/ 
-${white} Windows 11 Redesign, https://github.com/alvinneocom/windows-11/blob/master/src/bin/uneofetch
+${white}Windows 11 Redesign, https://github.com/alvinneocom/windows-11/blob/master/src/bin/uneofetch
 
 ${lc}${USER}@${host}
 
